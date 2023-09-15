@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Task Management {% endblock %}
+{% block contents %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center mb-4" style="color: rgb(11, 179, 45);">Welcome to To_Do_List Project</h1>
+            <div class="d-flex justify-content-center">
+                <a href="{% url 'tasks' %}" class="btn btn-primary me-3">Tasks</a>
+                <a href="{% url 'completed_tasks' %}" class="btn btn-success">Completed Tasks</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
